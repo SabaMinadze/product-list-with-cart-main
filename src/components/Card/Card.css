@@ -21,8 +21,17 @@
     transform: translateY(-17px);
 }
 
+.btn:active{
+    
+}
+
 
 .img2{
     margin-right: 13px;
+    margin-top: -3px;
 }
 
+.btntxt{
+    margin-left: 5px;
+    font-size: 14px;
+}
