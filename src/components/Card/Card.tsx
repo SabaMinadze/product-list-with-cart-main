@@ -4,8 +4,9 @@ import "./Card.css"
 function Card() {
   return (
     <>
-    <div className="container">
-
+    <div className="">
+    <div className="image"></div>
+    <button>Add to courn</button>
     </div>
     </>
   )
