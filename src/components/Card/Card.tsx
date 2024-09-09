@@ -4,9 +4,9 @@ import "./Card.css"
 function Card() {
   return (
     <>
-    <div className="">
+    <div className="container">
     <div className="image"></div>
-    <button>Add to courn</button>
+    <button>Add to court</button>
     </div>
     </>
   )
