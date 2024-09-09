@@ -41,6 +41,12 @@
 
 
 .txt3{
-    color: gray;
+    color: rgb(157,128,125);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.txt4{
     font-family: 'Red Hat Display', sans-serif;
 }
