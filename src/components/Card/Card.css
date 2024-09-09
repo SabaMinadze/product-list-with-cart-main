@@ -4,13 +4,14 @@
     flex-wrap: wrap; /* Ensures cards wrap if they exceed the container width */
     justify-content: space-around; /* Spaces out the cards evenly */
     padding: 20px;
+    margin-left: 90px;
   }
   
   /* Main box for each card, ensuring flex behavior */
   .mainBox {
     margin-top: 90px;
     width: 280px;
-    margin-left: 20px;
+    margin-left: -62px;
   }
   
   /* Styling for the card container itself */
@@ -26,8 +27,8 @@
   /* Image inside the card */
   .product {
     height: 250px;
-    width: 280px;
-    border-radius: 20px;
+    width: 260px;
+    
   }
   
   .btn {
@@ -65,6 +66,7 @@
   .txt4 {
     font-family: 'Red Hat Display', sans-serif;
     margin-top: -10px;
+    font-size: 22px;
   }
   
   .txt5 {
