@@ -6,6 +6,10 @@
 }
 
 
+.mainBox{
+    display: flex;
+}
+
 .image{
     height: 250px;
     width: 280px;
