@@ -29,7 +29,7 @@ function App() {
       
 
       <div className="answer">
-        a
+        <h1>{count}</h1>
       </div>
 
       <center><div className="attribution">
