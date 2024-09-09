@@ -10,3 +10,11 @@
   background-color: rgb(10, 221, 112);
   width: 900px;
 }
+
+.answer{
+  background-color: blue;
+  height: 1330px;
+  width: 580px;
+  margin-left: 920px;
+  transform: translateY(-1356px);
+}
