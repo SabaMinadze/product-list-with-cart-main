@@ -1,72 +1,78 @@
-.container{
-    margin-left: 50px; 
-    height: 250px;
-    width: 280px; 
-    margin-top: 100px; 
-}
-
-
-.mainBox{
+/* Flex container to hold all cards in App component */
+.card-container {
     display: flex;
-}
-
-.image{
+    flex-wrap: wrap; /* Ensures cards wrap if they exceed the container width */
+    justify-content: space-around; /* Spaces out the cards evenly */
+    padding: 20px;
+  }
+  
+  /* Main box for each card, ensuring flex behavior */
+  .mainBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; /* Spacing between each card */
+  }
+  
+  /* Styling for the card container itself */
+  .container {
+    height: 350px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Image inside the card */
+  .product {
     height: 250px;
     width: 280px;
-    background-color: red;
     border-radius: 20px;
-}
-
-.product{
-    height: 250px;
-    width: 280px;
-    border-radius: 20px;
-    
-}
-
-.btn{
+  }
+  
+  .btn {
     height: 40px;
     width: 150px;
     border-radius: 20px;
     border-color: rgb(200,183,178);
     background-color: white;
     transform: translateY(-17px);
-}
-
-.btn:hover{
+  }
+  
+  .btn:hover {
     color: rgb(202,71,30);
     cursor: pointer;
-}
-
-
-.img2{
+  }
+  
+  .img2 {
     margin-right: 13px;
     margin-top: -3px;
-}
-
-.btntxt{
+  }
+  
+  .btntxt {
     margin-left: 5px;
     font-size: 14px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
-
-
-.txt3{
+  }
+  
+  .txt3 {
     color: rgb(157,128,125);
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
     font-size: 17px;
     margin-top: -10px;
-}
-
-.txt4{
+  }
+  
+  .txt4 {
     font-family: 'Red Hat Display', sans-serif;
     margin-top: -10px;
-}
-
-.txt5{
+  }
+  
+  .txt5 {
     margin-top: -10px;
     color: rgb(200,67,54);
     font-family: 'Red Hat Display', sans-serif;
-}
+  }
+  
