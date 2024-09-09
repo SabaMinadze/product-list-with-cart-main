@@ -7,8 +7,9 @@ function App() {
     <>
       <h1 className="txt">Deserts</h1>
       <div className="card-container">
-        {data.map((e) => (
+        {data.map((e, index) => (
           <Card
+            key={index}
             price={e.price}
             category={e.category}
             imgSrc={e.image.desktop}
