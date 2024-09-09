@@ -6,7 +6,8 @@ function Card() {
     <>
     <div className="container">
     <div className="image"></div>
-    <center><button className="btn"><img src={addToCourtLogo} alt="error" /> Add to court</button></center>
+    <center><button className="btn"><img src={addToCourtLogo} 
+    alt="error" className="img2"/><span className="btntxt">Add to court</span> </button></center>
     </div>
     </>
   )
