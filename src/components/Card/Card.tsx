@@ -2,7 +2,7 @@ import "./Card.css"
 import addToCourtLogo from "./icon-add-to-cart.svg"
 
 
-function Card(props) {
+function Card(props:any) {
   return (
     <>
       <div className="mainBox">
