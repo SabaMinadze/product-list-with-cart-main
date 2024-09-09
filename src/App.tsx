@@ -6,15 +6,18 @@ function App() {
   return (
     <>
       <h1 className="txt">Deserts</h1>
-      <div className="card-container">
-        {data.map((e, index) => (
-          <Card
-            key={index}
-            price={e.price}
-            category={e.category}
-            imgSrc={e.image.desktop}
-          />
-        ))}
+      <div className="mainBody">
+        <div className="card-container">
+          {data.map((e, index) => (
+            <Card
+              key={index}
+              price={e.price}
+              category={e.category}
+              name={e.name}
+              imgSrc={e.image.desktop}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

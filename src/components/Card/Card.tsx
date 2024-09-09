@@ -11,7 +11,7 @@ function Card(props:any) {
         <center><button className="btn"><img src={addToCourtLogo} 
         alt="error" className="img2"/><span className="btntxt">Add to court</span> </button></center>
         <p className="txt3">{props.category}</p>
-        <h2 className="txt4">Waffle with Berries</h2>
+        <h2 className="txt4">{props.name}</h2>
         <h4 className="txt5">${props.price}</h4>
         </div>
       </div>
