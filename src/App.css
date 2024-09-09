@@ -3,7 +3,6 @@
 
 .txt{
   font-family: 'Red Hat Display', sans-serif;
-
 }
 
 .mainBody{
@@ -17,4 +16,8 @@
   width: 580px;
   margin-left: 920px;
   transform: translateY(-1380px);
+}
+
+.txt2{
+  font-family: 'Red Hat Display', sans-serif;
 }

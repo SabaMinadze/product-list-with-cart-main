@@ -29,7 +29,7 @@ function App() {
       
 
       <div className="answer">
-        <h1>{count}</h1>
+        <h1 className="txt2">Your Cart ({count})</h1>
       </div>
 
       <center><div className="attribution">
