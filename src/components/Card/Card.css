@@ -21,8 +21,9 @@
     transform: translateY(-17px);
 }
 
-.btn:active{
-    
+.btn:hover{
+    color: rgb(202,71,30);
+    cursor: pointer;
 }
 
 
@@ -34,4 +35,12 @@
 .btntxt{
     margin-left: 5px;
     font-size: 14px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+
+
+.txt3{
+    color: gray;
+    font-family: 'Red Hat Display', sans-serif;
 }
