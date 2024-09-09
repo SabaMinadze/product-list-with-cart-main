@@ -1,6 +1,7 @@
 .container{
-    margin-left: 50px;
-    
+    margin-left: 50px; 
+    height: 250px;
+    width: 280px;  
 }
 
 
@@ -9,4 +10,14 @@
     width: 280px;
     background-color: red;
     border-radius: 20px;
+}
+
+.btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border-color: rgb(200,183,178);
+    background-color: white;
+    transform: translateY(-17px);
+
 }
