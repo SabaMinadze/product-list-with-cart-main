@@ -11,14 +11,20 @@
 }
 
 .answer{
-  background-color: blue;
+  background-color: darkseagreen;
   height: 1330px;
   width: 580px;
   margin-left: 920px;
-  transform: translateY(-1380px);
+  transform: translateY(-1381px);
 }
 
 .txt2{
   font-family: 'Red Hat Display', sans-serif;
   color: rgb(199,58,15);
+}
+
+.info{
+  color: rgb(68, 63, 63);
+  font-weight: 500;
+  font-family: 'Red Hat Display', sans-serif;
 }

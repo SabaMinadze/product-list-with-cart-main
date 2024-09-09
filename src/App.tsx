@@ -2,6 +2,7 @@ import "./App.css";
 import Card from "./components/Card/Card";
 import data from "../data.json";
 import { useState } from "react";
+import empty from "../public/images/illustration-empty-cart.svg"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,8 @@ function App() {
 
       <div className="answer">
         <h1 className="txt2">Your Cart ({count})</h1>
+        <img src={empty} alt="error" />
+        <p className="info">Your added items will appear here</p>
       </div>
 
       <center><div className="attribution">
