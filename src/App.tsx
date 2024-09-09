@@ -7,8 +7,7 @@ function App() {
   return (
     <>
     <h1 className="txt">Deserts</h1>
-    <div>{data.map(e => <h2>{e.price}</h2>)}</div>
-    <div>{data.map(e => <Card price={e.price} category="asd"/>)}</div>
+    < div>{data.map(e => <Card price={e.price} category={e.category} imgSrc={e.image.desktop}/>)}</div>
     </>
   )
 }
