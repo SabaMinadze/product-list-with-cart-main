@@ -16,10 +16,6 @@ function Card(props:any) {
         </div>
       </div>
 
-      
-      
-
-
     </>
   )
 }
