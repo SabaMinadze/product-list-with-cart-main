@@ -15,6 +15,7 @@ function App() {
   const [lemon, setLemon] = useState("")
   const [caramel, setCaramel] = useState("")
   const [panna , setPanna] = useState("")
+  const [price, setPrice] = useState(0)
   
 
   return (
@@ -41,7 +42,15 @@ function App() {
                 {e.name === "Red Velvet Cake" ? setCaramel("Red Velvet Cake") : null}
                 {e.name === "Salted Caramel Brownie" ? setPanna("Salted Caramel Brownie") : null}
                 {e.name === "Vanilla Panna Cotta" ? setLemon("Vanilla Panna Cotta") : null}  
-                
+                {e.category === "Waffle" ? setPrice(price + e.price) : null}
+                {e.category === "Crème Brûlée" ? setPrice(price + e.price) : null}
+                {e.category === "Macaron" ? setPrice(price + e.price) : null}
+                {e.category === "Tiramisu" ? setPrice(price + e.price) : null}
+                {e.category === "Baklava" ? setPrice(price + e.price) : null}
+                {e.category === "Pie" ? setPrice(price + e.price) : null}
+                {e.category === "Cake" ? setPrice(price + e.price) : null}
+                {e.category === "Brownie" ? setPrice(price + e.price) : null}
+                {e.category === "Panna Cotta" ? setPrice(price + e.price) : null}
                 
               }}
             />
@@ -63,7 +72,7 @@ function App() {
         <h3 className="inf">{lemon === "Vanilla Panna Cotta" ? <h3>Vanilla Panna Cotta</h3> : null}</h3>
         <div className="orderBox">
           {count >= 1 ? <p className="order">Order Total</p> : null}
-          <p className="count">$69</p>
+          {count >= 1 ? <p className="count">${price}</p> : null}
         </div>
         {count >= 1 ? <div className="carbon"><img src={carbon} alt="error" />This is a carbon-neutral delivery</div> : null}
         <br />
