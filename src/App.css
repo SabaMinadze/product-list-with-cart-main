@@ -32,3 +32,15 @@
 .inf{
   font-family: 'Red Hat Display', sans-serif;
 }
+
+.cnfrm{
+  background-color: rgb(199,58,15);
+  border: none;
+  height: 50px;
+  width: 250px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 19px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 530;
+}
