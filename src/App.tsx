@@ -63,7 +63,7 @@ function App() {
         <h3 className="inf">{lemon === "Vanilla Panna Cotta" ? <h3>Vanilla Panna Cotta</h3> : null}</h3>
         <div className="orderBox">
           {count >= 1 ? <p className="order">Order Total</p> : null}
-          <p className="count">asdasdasd</p>
+          <p className="count">$69</p>
         </div>
         {count >= 1 ? <div className="carbon"><img src={carbon} alt="error" />This is a carbon-neutral delivery</div> : null}
         <br />
