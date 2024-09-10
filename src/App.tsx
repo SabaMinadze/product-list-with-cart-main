@@ -33,7 +33,10 @@ function App() {
                 setCount(count + 1)
                 {e.name === "Waffle with Berries" ? setVaffle("Waffle with Berries") : null}
                 {e.name === "Vanilla Bean Crème Brûlée" ? setVanilla("Vanilla Bean Crème Brûlée") : null}
-                 
+                {e.name === "Macaron Mix of Five" ? setMacaron("Macaron Mix of Five") : null}
+                {e.name === "Macaron Mix of Five" ? setTiramisu("Macaron Mix of Five") : null} 
+                {e.name === "Macaron Mix of Five" ? setPistachio("Macaron Mix of Five") : null} 
+                {e.name === "Macaron Mix of Five" ? setLemon("Macaron Mix of Five") : null}  
                 
                 
               }}
