@@ -53,7 +53,14 @@
 
 
 .carbon{
-  height: 30px;
-  width: 240px;
+  height: 26px;
+  width: 250px;
   background-color: rgb(244,237,235);
+  padding: 15px;
+  border-radius: 10px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.qw{
+  font-family: 800;
 }
