@@ -13,7 +13,7 @@ function App() {
   const [pistachio, setPistachio] = useState("")
   const [lemon, setLemon] = useState("")
   const [caramel, setCaramel] = useState("")
-  const [panna , setPanna ] = useState("")
+  const [panna , setPanna] = useState("")
   
 
   return (
@@ -35,8 +35,11 @@ function App() {
                 {e.name === "Vanilla Bean Crème Brûlée" ? setVanilla("Vanilla Bean Crème Brûlée") : null}
                 {e.name === "Macaron Mix of Five" ? setMacaron("Macaron Mix of Five") : null}
                 {e.name === "Classic Tiramisu" ? setTiramisu("Classic Tiramisu") : null} 
-                {e.name === "Macaron Mix of Five" ? setPistachio("Macaron Mix of Five") : null} 
-                {e.name === "Macaron Mix of Five" ? setLemon("Macaron Mix of Five") : null}  
+                {e.name === "Pistachio Baklava" ? setPistachio("Pistachio Baklava") : null} 
+                {e.name === "Lemon Meringue Pie" ? setLemon("Lemon Meringue Pie") : null}
+                {e.name === "Red Velvet Cake" ? setCaramel("Red Velvet Cake") : null}
+                {e.name === "Salted Caramel Brownie" ? setPanna("Salted Caramel Brownie") : null}
+                {e.name === "Vanilla Panna Cotta" ? setLemon("Vanilla Panna Cotta") : null}  
                 
                 
               }}
