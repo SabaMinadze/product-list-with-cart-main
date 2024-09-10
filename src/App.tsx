@@ -68,7 +68,6 @@ function App() {
         <h3 className="inf">{panna === "Salted Caramel Brownie" ? <h3>Salted Caramel Brownie</h3> : null}</h3>
         {count >= 1 ? <hr/> : null}
         <h3 className="inf">{lemon === "Vanilla Panna Cotta" ? <h3>Vanilla Panna Cotta</h3> : null}</h3>
-        {count >= 1 ? <hr/> : null}
         {count <= 0 ? <img src={empty} alt="error" /> : null}
         {count <= 0 ? <p className="info">Your added items will appear here</p> : null}
       </div>
