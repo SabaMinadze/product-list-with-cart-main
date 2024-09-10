@@ -6,6 +6,7 @@ import empty from "../public/images/illustration-empty-cart.svg"
 
 function App() {
   const [count, setCount] = useState(0)
+  const [vaffle, setVaffle] = useState("")
   return (
     <>
       <h1 className="txt">Deserts</h1>
@@ -21,6 +22,7 @@ function App() {
               onClick={() => {
                 console.log("Hello wolrd");
                 setCount(count + 1)
+                setVaffle("Waffle with Berries")
                 
               }}
             />
@@ -31,6 +33,7 @@ function App() {
 
       <div className="answer">
         <h1 className="txt2">Your Cart ({count})</h1>
+        <h3 className="inf"><h3>{vaffle === "Waffle with Berries" ? <h3>Waffle with Berries</h3> : null}</h3></h3>
         <img src={empty} alt="error" />
         <p className="info">Your added items will appear here</p>
       </div>
