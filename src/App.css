@@ -39,8 +39,14 @@
   height: 50px;
   width: 250px;
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 19px;
+  font-size: 17px;
   border-radius: 30px;
   color: white;
   font-weight: 530;
+  cursor: pointer;
+}
+
+.cnfrm:hover {
+  background-color: rgb(118, 33, 8);
+
 }
