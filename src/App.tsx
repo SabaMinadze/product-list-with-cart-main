@@ -10,8 +10,8 @@ function App() {
   const [vanilla, setVanilla] = useState("")
   const [macaron, setMacaron] = useState("")
   const [tiramisu, setTiramisu] = useState("")
-  const [tiramisu, setTiramisu] = useState("")
-  const [tiramisu, setTiramisu] = useState("")
+  const [pistachio, setPistachio] = useState("")
+  const [lemon, setLemon] = useState("")
   const [tiramisu, setTiramisu] = useState("")
   return (
     <>
