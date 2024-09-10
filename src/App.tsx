@@ -61,6 +61,10 @@ function App() {
         <h3 className="inf">{caramel === "Red Velvet Cake" ? <h3>Red Velvet Cake</h3> : null}</h3>
         <h3 className="inf">{panna === "Salted Caramel Brownie" ? <h3>Salted Caramel Brownie</h3> : null}</h3>
         <h3 className="inf">{lemon === "Vanilla Panna Cotta" ? <h3>Vanilla Panna Cotta</h3> : null}</h3>
+        <div className="orderBox">
+          {count >= 1 ? <p className="order">Order Total</p> : null}
+          <p className="count">asdasdasd</p>
+        </div>
         {count >= 1 ? <div className="carbon"><img src={carbon} alt="error" />This is a carbon-neutral delivery</div> : null}
         <br />
         {count >= 1 ? <button className="cnfrm">confirm order</button> : null}

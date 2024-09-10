@@ -64,3 +64,17 @@
 .qw{
   font-family: 800;
 }
+
+.order{
+  font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.orderBox{
+  display: flex;
+
+}
+
+.count{
+  font-family: 'Red Hat Display', sans-serif;
+}
