@@ -3,10 +3,10 @@
 
 .txt{
   font-family: 'Red Hat Display', sans-serif;
+  margin-left: 30px;
 }
 
 .mainBody{
-  background-color: rgb(10, 221, 112);
   width: 900px;
 }
 
