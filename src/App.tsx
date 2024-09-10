@@ -4,6 +4,7 @@ import data from "../data.json";
 import { useState } from "react";
 import empty from "../public/images/illustration-empty-cart.svg"
 import carbon from "../public/images/icon-carbon-neutral.svg"
+import Flash from "./components/Flash/Flash";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,10 +29,7 @@ function App() {
   const [lemonprice, setlemonprice] = useState(0) 
   const [cakeprice, setCakePrice] = useState(0)
   const [caramelprice, setcaramelprice] = useState(0) 
-  const [pannaprice, setpannaprice] = useState(0)
-  
-  console.log(vaffle, count);
-
+  const [pannaprice, setpannaprice] = useState(0)  
   
 
   return (
@@ -92,9 +90,7 @@ function App() {
           setCount(count - 1)
         }}>Decrease</button>
         <h1 className="txt2">Your Cart ({count})</h1>
-        <h3 className="inf">
-        {vaffle === "Waffle with Berries" || count >= 1 ? "Waffle with Berries" : null}
-        </h3>
+        <h3 className="inf">{vaffle === "Waffle with Berries" ? <h3>Waffle with Berries</h3> : null}</h3>
         {vaffle === "Waffle with Berries" ? <h2>${vaffleprice}</h2> : null}
         <h3 className="inf">{vanilla === "Vanilla Bean Crème Brûlée" ? <h3>Vanilla Bean Crème Brûlée</h3> : null}</h3>
         {vanilla === "Vanilla Bean Crème Brûlée" ? <h2>${vanillaprice}</h2> : null}
@@ -118,7 +114,13 @@ function App() {
         </div>
         {count >= 1 ? <div className="carbon"><img src={carbon} alt="error" />This is a carbon-neutral delivery</div> : null}
         <br />
-        {count >= 1 ? <button className="cnfrm">confirm order</button> : null}
+        {count >= 1 ? <button className="cnfrm" onClick={() => {
+          console.log("Hello");
+          
+          return (
+            <Flash/>
+          )
+        }}>confirm order</button> : null}
         {count <= 0 ? <img src={empty} alt="error" /> : null}
         {count <= 0 ? <p className="info">Your added items will appear here</p> : null}
       </div>
