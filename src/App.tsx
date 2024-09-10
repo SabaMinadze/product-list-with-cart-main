@@ -12,7 +12,7 @@ function App() {
   const [tiramisu, setTiramisu] = useState("")
   const [pistachio, setPistachio] = useState("")
   const [lemon, setLemon] = useState("")
-  const [tiramisu, setTiramisu] = useState("")
+  const [cake, setCake] = useState("")
   return (
     <>
       <h1 className="txt">Deserts</h1>
