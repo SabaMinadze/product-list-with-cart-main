@@ -7,6 +7,12 @@ import empty from "../public/images/illustration-empty-cart.svg"
 function App() {
   const [count, setCount] = useState(0)
   const [vaffle, setVaffle] = useState("")
+  const [vanilla, setVanilla] = useState("")
+  const [macaron, setMacaron] = useState("")
+  const [tiramisu, setTiramisu] = useState("")
+  const [tiramisu, setTiramisu] = useState("")
+  const [tiramisu, setTiramisu] = useState("")
+  const [tiramisu, setTiramisu] = useState("")
   return (
     <>
       <h1 className="txt">Deserts</h1>
