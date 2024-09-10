@@ -114,13 +114,7 @@ function App() {
         </div>
         {count >= 1 ? <div className="carbon"><img src={carbon} alt="error" />This is a carbon-neutral delivery</div> : null}
         <br />
-        {count >= 1 ? <button className="cnfrm" onClick={() => {
-          console.log("Hello");
-          
-          return (
-            <Flash/>
-          )
-        }}>confirm order</button> : null}
+        {count >= 1 ? <button className="cnfrm">confirm order</button> : null}
         {count <= 0 ? <img src={empty} alt="error" /> : null}
         {count <= 0 ? <p className="info">Your added items will appear here</p> : null}
       </div>
