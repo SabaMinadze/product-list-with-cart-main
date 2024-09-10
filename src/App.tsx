@@ -4,7 +4,6 @@ import data from "../data.json";
 import { useState } from "react";
 import empty from "../public/images/illustration-empty-cart.svg"
 import carbon from "../public/images/icon-carbon-neutral.svg"
-import Flash from "./components/Flash/Flash";
 
 function App() {
   const [count, setCount] = useState(0)
