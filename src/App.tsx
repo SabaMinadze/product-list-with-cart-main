@@ -56,9 +56,10 @@ function App() {
         <h3 className="inf">{macaron === "Macaron Mix of Five" ? <h3>Macaron Mix of Five</h3> : null}</h3>
         <h3 className="inf">{tiramisu === "Classic Tiramisu" ? <h3>Classic Tiramisu</h3> : null}</h3>
         <h3 className="inf">{pistachio === "Pistachio Baklava" ? <h3>Pistachio Baklava</h3> : null}</h3>
-        <h3 className="inf">{lemon === "Classic Tiramisu" ? <h3>Classic Tiramisu</h3> : null}</h3>
-        <h3 className="inf">{caramel === "Classic Tiramisu" ? <h3>Classic Tiramisu</h3> : null}</h3>
-        <h3 className="inf">{panna === "Classic Tiramisu" ? <h3>Classic Tiramisu</h3> : null}</h3>
+        <h3 className="inf">{lemon === "Lemon Meringue Pie" ? <h3>Lemon Meringue Pie</h3> : null}</h3>
+        <h3 className="inf">{caramel === "Red Velvet Cake" ? <h3>Red Velvet Cake</h3> : null}</h3>
+        <h3 className="inf">{panna === "Salted Caramel Brownie" ? <h3>Salted Caramel Brownie</h3> : null}</h3>
+        <h3 className="inf">{lemon === "Vanilla Panna Cotta" ? <h3>Vanilla Panna Cotta</h3> : null}</h3>
         {count >= 1 ? <hr/> : null}
         {count <= 0 ? <img src={empty} alt="error" /> : null}
         {count <= 0 ? <p className="info">Your added items will appear here</p> : null}
