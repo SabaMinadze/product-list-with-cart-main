@@ -16,7 +16,7 @@ function Card(props:any) {
         </div>
       </div>
 
-      <br /><br /><br /><br /><br /><br />
+      
       
 
 
