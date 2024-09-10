@@ -3,6 +3,7 @@ import Card from "./components/Card/Card";
 import data from "../data.json";
 import { useState } from "react";
 import empty from "../public/images/illustration-empty-cart.svg"
+import carbon from "../public/images/icon-carbon-neutral.svg"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -60,6 +61,8 @@ function App() {
         <h3 className="inf">{caramel === "Red Velvet Cake" ? <h3>Red Velvet Cake</h3> : null}</h3>
         <h3 className="inf">{panna === "Salted Caramel Brownie" ? <h3>Salted Caramel Brownie</h3> : null}</h3>
         <h3 className="inf">{lemon === "Vanilla Panna Cotta" ? <h3>Vanilla Panna Cotta</h3> : null}</h3>
+        {count >= 1 ? <div className="carbon"><img src={carbon} alt="error" /> This is a carbon-neutral delivery</div> : null}
+        <br />
         {count >= 1 ? <button className="cnfrm">confirm order</button> : null}
         {count <= 0 ? <img src={empty} alt="error" /> : null}
         {count <= 0 ? <p className="info">Your added items will appear here</p> : null}
