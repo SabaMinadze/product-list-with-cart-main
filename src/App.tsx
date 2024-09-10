@@ -46,6 +46,7 @@ function App() {
       <div className="answer">
         <h1 className="txt2">Your Cart ({count})</h1>
         <h3 className="inf">{vaffle === "Waffle with Berries" ? <h3>Waffle with Berries</h3> : null}</h3>
+        {count >= 1 ? <hr/> : null}
         <h3 className="inf">{vanilla === "Vanilla Bean Crème Brûlée" ? <h3>Vanilla Bean Crème Brûlée</h3> : null}</h3>
         {count <= 0 ? <img src={empty} alt="error" /> : null}
         {count <= 0 ? <p className="info">Your added items will appear here</p> : null}
