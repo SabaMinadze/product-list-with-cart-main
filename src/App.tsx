@@ -34,8 +34,8 @@ function App() {
       <div className="answer">
         <h1 className="txt2">Your Cart ({count})</h1>
         <h3 className="inf"><h3>{vaffle === "Waffle with Berries" ? <h3>Waffle with Berries</h3> : null}</h3></h3>
-        <img src={empty} alt="error" />
-        <p className="info">Your added items will appear here</p>
+        {count <= 0 ? <img src={empty} alt="error" /> : null}
+        {count <= 0 ? <p className="info">Your added items will appear here</p> : null}
       </div>
 
       <center><div className="attribution">
