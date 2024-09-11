@@ -50,7 +50,7 @@ function App() {
           {data.map((e, index) => (
             <Card
               key={index}
-              price={Math.floor(Number(e.price))}
+              price={Number(Math.floor(Number(e.price)))}
               category={e.category}
               name={e.name}
               imgSrc={e.image.desktop}
@@ -154,17 +154,19 @@ function App() {
         <h3 className="inf">{panna === "Vanilla Panna Cotta" ? <h3>Vanilla Panna Cotta</h3> : null}</h3>
           <div className="priceBox">
             {panna === "Vanilla Panna Cotta" ? <h2>${pannaprice}</h2> : null}
-            <h1>{panna === "Vanilla Panna Cotta" ? <>$i + pannaprice</> : null}</h1>
+            <h2 className="priceTag">{panna === "Vanilla Panna Cotta" ? <>${i + pannaprice}</> : null}</h2>
           </div>
         <div className="orderBox">      
           {count >= 1 ? <p className="order">Order Total</p> : null}
           {count >= 1 ? <p className="count">${price}</p> : null}
         </div>
-        {count >= 1 ? <div className="carbon"><img src={carbon} alt="error" />This is a carbon-neutral delivery</div> : null}
-        <br />
-        {count >= 1 ? <button className="cnfrm">confirm order</button> : null}
-        {count <= 0 ? <img src={empty} alt="error" className="img7"/> : null}
-        {count <= 0 ? <p className="info">Your added items will appear here</p> : null}
+        <div className="orderBox2">
+          {count >= 1 ? <div className="carbon"><img src={carbon} alt="error" />This is a carbon-neutral delivery</div> : null}
+          <br />
+          {count >= 1 ? <button className="cnfrm">confirm order</button> : null}
+          {count <= 0 ? <img src={empty} alt="error" className="img7"/> : null}
+          {count <= 0 ? <p className="info">Your added items will appear here</p> : null}
+        </div>
       </div>
 
       <center><div className="attribution">

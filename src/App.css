@@ -78,6 +78,10 @@
 
 .orderBox{
   display: flex;
+}
+
+.orderBox2{
+
 
 }
 
@@ -93,10 +97,10 @@
   display: flex;
   font-size: 12px;
   font-family: 'Red Hat Display', sans-serif;
+  margin-top: -25px;
 }
 
 .priceTag{
-  margin-left: 40px;
-  
+  margin-left: 40px; 
 }
 
