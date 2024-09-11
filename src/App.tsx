@@ -6,6 +6,10 @@ import empty from "../public/images/illustration-empty-cart.svg"
 import carbon from "../public/images/icon-carbon-neutral.svg"
 
 function App() {
+
+  function delete() {
+    console.log("Deleted"); 
+  }
   const [count, setCount] = useState(0)
 
   const [vaffle, setVaffle] = useState("")
@@ -42,14 +46,11 @@ function App() {
   const [i, setI] = useState(pannaprice)
 
 
-  function delete() {
-    console.log("Deleted");
-    
-  }
+  
   
 
   return (
-    <>
+    <> 
       <h1 className="txt">Deserts</h1>
       <div className="mainBody">
         <div className="card-container">
