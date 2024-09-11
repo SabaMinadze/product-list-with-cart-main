@@ -31,15 +31,15 @@ function App() {
   const [pannaprice, setpannaprice] = useState(0)  
 
 
-  const [a, setA] = useState(0)
-  const [b, setB] = useState(0)
-  const [c, setC] = useState(0)
-  const [d, setD] = useState(0)
-  const [e, setE] = useState(0)
-  const [f, setF] = useState("")
-  const [g, setG] = useState("")
-  const [h, setH] = useState("")
-  const [i, setI] = useState("")
+  const [a, setA] = useState(vaffleprice)
+  const [b, setB] = useState(vanillaprice)
+  const [c, setC] = useState(macaronprice)
+  const [d, setD] = useState(tiramisuprice)
+  const [ea, setEA] = useState(pistachioprice)
+  const [f, setF] = useState(lemonprice)
+  const [g, setG] = useState(cakeprice)
+  const [h, setH] = useState(caramelprice)
+  const [i, setI] = useState(pannaprice)
   
 
   return (
@@ -50,7 +50,7 @@ function App() {
           {data.map((e, index) => (
             <Card
               key={index}
-              price={e.price}
+              price={Math.floor(Number(e.price))}
               category={e.category}
               name={e.name}
               imgSrc={e.image.desktop}
@@ -93,7 +93,7 @@ function App() {
                 {e.category === "Crème Brûlée" ? setB(b + vanillaprice) : null}
                 {e.category === "Macaron" ? setC(c + macaronprice) : null}
                 {e.category === "Tiramisu" ? setD(d + tiramisuprice) : null}
-                {e.category === "Baklava" ? setE(e + pistachioprice) : null}
+                {e.category === "Baklava" ? setEA(ea + pistachioprice) : null}
                 {e.category === "Pie" ? setF(f + lemonprice) : null}
                 {e.category === "Cake" ? setG(g + cakeprice) : null}
                 {e.category === "Brownie" ? setH(h + caramelprice) : null}
@@ -113,19 +113,19 @@ function App() {
         <h1 className="txt2">Your Cart ({count})</h1>
         <h3 className="inf">{vaffle === "Waffle with Berries" ? <h3>Waffle with Berries</h3> : null}</h3>
         {vaffle === "Waffle with Berries" ? <h2>${vaffleprice}</h2> : null}
-        <h1>{a}</h1>
+        <h1>{a + vaffleprice}</h1>
         <h3 className="inf">{vanilla === "Vanilla Bean Crème Brûlée" ? <h3>Vanilla Bean Crème Brûlée</h3> : null}</h3>
         {vanilla === "Vanilla Bean Crème Brûlée" ? <h2>${vanillaprice}</h2> : null}
-        <h1>{b}</h1>
+        <h1>{b + vanillaprice}</h1>
         <h3 className="inf">{macaron === "Macaron Mix of Five" ? <h3>Macaron Mix of Five</h3> : null}</h3>
         {macaron === "Macaron Mix of Five" ? <h2>${macaronprice}</h2> : null}
-        <h1>{c}</h1>
+        <h1>{c + macaronprice}</h1>
         <h3 className="inf">{tiramisu === "Classic Tiramisu" ? <h3>Classic Tiramisu</h3> : null}</h3>
         {tiramisu === "Classic Tiramisu" ? <h2>${tiramisuprice}</h2> : null}
         <h1>{d}</h1>
         <h3 className="inf">{pistachio === "Pistachio Baklava" ? <h3>Pistachio Baklava</h3> : null}</h3>
         {pistachio === "Pistachio Baklava" ? <h2>${pistachioprice}</h2> : null}
-        <h1>{e}</h1>
+        <h1>{ea}</h1>
         <h3 className="inf">{lemon === "Lemon Meringue Pie" ? <h3>Lemon Meringue Pie</h3> : null}</h3>
         {lemon === "Lemon Meringue Pie" ? <h2>${lemonprice}</h2> : null}
         <h1>{f}</h1>
