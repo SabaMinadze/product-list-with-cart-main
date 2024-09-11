@@ -112,50 +112,50 @@ function App() {
         }}>Decrease</button>
         <h1 className="txt2">Your Cart ({count})</h1>
         <h3 className="inf">{vaffle === "Waffle with Berries" ? <h3>Waffle with Berries</h3> : null}</h3>
-        <div className="priceBox">
-          {vaffle === "Waffle with Berries" ? <h2>${vaffleprice}</h2> : null}
-          <h2 className="priceTag">{vaffle === "Waffle with Berries" ? a + vaffleprice : null}</h2>
-        </div>
+          <div className="priceBox">
+            {vaffle === "Waffle with Berries" ? <h2>${vaffleprice}</h2> : null}
+            <h2 className="priceTag">{vaffle === "Waffle with Berries" ? a + vaffleprice : null}</h2>
+          </div>
         <h3 className="inf">{vanilla === "Vanilla Bean Crème Brûlée" ? <h3>Vanilla Bean Crème Brûlée</h3> : null}</h3>
-        <div className="priceBox">
-          {vanilla === "Vanilla Bean Crème Brûlée" ? <h2>${vanillaprice}</h2> : null}
-          <h2 className="priceTag">{vanilla === "Vanilla Bean Crème Brûlée" ? b + vanillaprice : null}</h2>
-        </div>
+          <div className="priceBox">
+            {vanilla === "Vanilla Bean Crème Brûlée" ? <h2>${vanillaprice}</h2> : null}
+            <h2 className="priceTag">{vanilla === "Vanilla Bean Crème Brûlée" ? b + vanillaprice : null}</h2>
+          </div>
         <h3 className="inf">{macaron === "Macaron Mix of Five" ? <h3>Macaron Mix of Five</h3> : null}</h3>
-        <div className="priceBox">
-          {macaron === "Macaron Mix of Five" ? <h2>${macaronprice}</h2> : null}
-          <h1>{macaron === "Macaron Mix of Five" ? c + macaronprice : null}</h1>
-        </div>
+          <div className="priceBox">
+            {macaron === "Macaron Mix of Five" ? <h2>${macaronprice}</h2> : null}
+            <h1>{macaron === "Macaron Mix of Five" ? c + macaronprice : null}</h1>
+          </div>
         <h3 className="inf">{tiramisu === "Classic Tiramisu" ? <h3>Classic Tiramisu</h3> : null}</h3>
-        <div className="priceBox">
-        {tiramisu === "Classic Tiramisu" ? <h2>${tiramisuprice}</h2> : null}
-        <h1>{tiramisu === "Classic Tiramisu" ? d + tiramisuprice : null}</h1>
-        </div>
+          <div className="priceBox">
+            {tiramisu === "Classic Tiramisu" ? <h2>${tiramisuprice}</h2> : null}
+            <h1>{tiramisu === "Classic Tiramisu" ? d + tiramisuprice : null}</h1>
+          </div>
         <h3 className="inf">{pistachio === "Pistachio Baklava" ? <h3>Pistachio Baklava</h3> : null}</h3>
-        <div className="priceBox">
-        {pistachio === "Pistachio Baklava" ? <h2>${pistachioprice}</h2> : null}
-        <h1>{pistachio === "Pistachio Baklava" ?    ea + pistachioprice  : null}</h1>
-        </div>
+          <div className="priceBox">
+            {pistachio === "Pistachio Baklava" ? <h2>${pistachioprice}</h2> : null}
+            <h1>{pistachio === "Pistachio Baklava" ?    ea + pistachioprice  : null}</h1>
+          </div>
         <h3 className="inf">{lemon === "Lemon Meringue Pie" ? <h3>Lemon Meringue Pie</h3> : null}</h3>
-        <div className="priceBox">
-        {lemon === "Lemon Meringue Pie" ? <h2>${lemonprice}</h2> : null}
-        <h1>{lemon === "Lemon Meringue Pie" ?    f + lemonprice : null}</h1>
-        </div>
+          <div className="priceBox">
+            {lemon === "Lemon Meringue Pie" ? <h2>${lemonprice}</h2> : null}
+            <h1>{lemon === "Lemon Meringue Pie" ?    f + lemonprice : null}</h1>
+          </div>
         <h3 className="inf">{cake === "Red Velvet Cake" ? <h3>Red Velvet Cake</h3> : null}</h3>
-        <div className="priceBox">
-        {cake === "Red Velvet Cake" ? <h2>${cakeprice}</h2> : null}
-        <h1>{cake === "Red Velvet Cake" ? g + cakeprice : null}</h1>
-        </div>
+          <div className="priceBox">
+            {cake === "Red Velvet Cake" ? <h2>${cakeprice}</h2> : null}
+            <h1>{cake === "Red Velvet Cake" ? g + cakeprice : null}</h1>
+          </div>
         <h3 className="inf">{caramel === "Salted Caramel Brownie" ? <h3>Salted Caramel Brownie</h3> : null}</h3>
-        <div className="priceBox">
-        {caramel === "Salted Caramel Brownie" ? <h2>${caramelprice}</h2> : null}
-        <h1>{caramel === "Salted Caramel Brownie" ? h + caramelprice  : null}</h1>
-        </div>
+          <div className="priceBox">
+            {caramel === "Salted Caramel Brownie" ? <h2>${caramelprice}</h2> : null}
+            <h1>{caramel === "Salted Caramel Brownie" ? h + caramelprice  : null}</h1>
+          </div>
         <h3 className="inf">{panna === "Vanilla Panna Cotta" ? <h3>Vanilla Panna Cotta</h3> : null}</h3>
-        <div className="priceBox">
-        {panna === "Vanilla Panna Cotta" ? <h2>${pannaprice}</h2> : null}
-        <h1>{panna === "Vanilla Panna Cotta" ? i + pannaprice : null}</h1>
-        </div>
+          <div className="priceBox">
+            {panna === "Vanilla Panna Cotta" ? <h2>${pannaprice}</h2> : null}
+            <h1>{panna === "Vanilla Panna Cotta" ? i + pannaprice : null}</h1>
+          </div>
         <div className="orderBox">      
           {count >= 1 ? <p className="order">Order Total</p> : null}
           {count >= 1 ? <p className="count">${price}</p> : null}
