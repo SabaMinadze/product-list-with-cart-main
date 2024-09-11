@@ -26,6 +26,12 @@
   color: rgb(68, 63, 63);
   font-weight: 500;
   font-family: 'Red Hat Display', sans-serif;
+  transform: translateY(-400px);
+}
+
+.img7{
+  transform: translateY(-400px);
+  background-color: red;
 }
 
 
@@ -79,16 +85,18 @@
   font-family: 'Red Hat Display', sans-serif;
   margin-left: 140px;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 17px;
 }
 
 .priceBox{
   display: flex;
-  font-size: 15px;
+  font-size: 12px;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 .priceTag{
   margin-left: 40px;
   
 }
+
