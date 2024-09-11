@@ -6,16 +6,10 @@ import empty from "../public/images/illustration-empty-cart.svg"
 import carbon from "../public/images/icon-carbon-neutral.svg"
 
 function App() {
-
-  function delete1() {
-    console.log("Deleted"); 
-    setDel(1)
-  }
   const [count, setCount] = useState(0)
 
 
-  const [del, setDel] = useState(0)
-  
+
   const [vaffle, setVaffle] = useState("")
   const [vanilla, setVanilla] = useState("")
   const [macaron, setMacaron] = useState("")
@@ -66,7 +60,6 @@ function App() {
               name={e.name}
               imgSrc={e.image.desktop}
               onClick={() => {
-                console.log("Hello wolrd");
                 setCount(count + 1)
                 {e.name === "Waffle with Berries" ? setVaffle("Waffle with Berries") : null}
                 {e.name === "Vanilla Bean Crème Brûlée" ? setVanilla("Vanilla Bean Crème Brûlée") : null}
@@ -122,7 +115,7 @@ function App() {
           setCount(count - 1)
         }}>Decrease</button>
         <h1 className="txt2">Your Cart ({count})</h1>
-        <div className="subBox" onClick={delete1}>
+        <div className="subBox">
           <h3 className="inf">{vaffle === "Waffle with Berries" ? <h3>Waffle with Berries</h3> : null}</h3>
             <div className="priceBox">
               {vaffle === "Waffle with Berries" ? <h2>${vaffleprice}</h2> : null}
@@ -202,8 +195,6 @@ function App() {
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/SabaMinadze">Saba Minadze</a>.
       </div></center>
-
-      <h1>{del === 0 ? }</h1>
     </>
   );
 }
