@@ -89,15 +89,15 @@ function App() {
                 {e.category === "Panna Cotta" ? setpannaprice(e.price) : null}
 
 
-                {e.category === "Waffle" ? setA(price + e.price) : null}
-                {e.category === "Crème Brûlée" ? setB(price + e.price) : null}
-                {e.category === "Macaron" ? setC(price + e.price) : null}
-                {e.category === "Waffle" ? setD(price + e.price) : null}
-                {e.category === "Crème Brûlée" ? setB(price + e.price) : null}
-                {e.category === "Macaron" ? setC(price + e.price) : null}
-                {e.category === "Waffle" ? setA(price + e.price) : null}
-                {e.category === "Crème Brûlée" ? setB(price + e.price) : null}
-                {e.category === "Macaron" ? setC(price + e.price) : null}
+                {e.category === "Waffle" ? setA(vaffleprice + e.price) : null}
+                {e.category === "Crème Brûlée" ? setB(vanillaprice + e.price) : null}
+                {e.category === "Macaron" ? setC(macaronprice + e.price) : null}
+                {e.category === "Tiramisu" ? setD(tiramisuprice + e.price) : null}
+                {e.category === "Baklava" ? setE(price + e.price) : null}
+                {e.category === "Pie" ? setF(price + e.price) : null}
+                {e.category === "Cake" ? setG(price + e.price) : null}
+                {e.category === "Brownie" ? setH(price + e.price) : null}
+                {e.category === "Panna Cotta" ? setI(price + e.price) : null}
                 
               }}
             />
@@ -119,19 +119,25 @@ function App() {
         <h1>{b}</h1>
         <h3 className="inf">{macaron === "Macaron Mix of Five" ? <h3>Macaron Mix of Five</h3> : null}</h3>
         {macaron === "Macaron Mix of Five" ? <h2>${macaronprice}</h2> : null}
-        <h1>{a}</h1>
+        <h1>{c}</h1>
         <h3 className="inf">{tiramisu === "Classic Tiramisu" ? <h3>Classic Tiramisu</h3> : null}</h3>
         {tiramisu === "Classic Tiramisu" ? <h2>${tiramisuprice}</h2> : null}
+        <h1>{d}</h1>
         <h3 className="inf">{pistachio === "Pistachio Baklava" ? <h3>Pistachio Baklava</h3> : null}</h3>
         {pistachio === "Pistachio Baklava" ? <h2>${pistachioprice}</h2> : null}
+        <h1>{e}</h1>
         <h3 className="inf">{lemon === "Lemon Meringue Pie" ? <h3>Lemon Meringue Pie</h3> : null}</h3>
         {lemon === "Lemon Meringue Pie" ? <h2>${lemonprice}</h2> : null}
+        <h1>{f}</h1>
         <h3 className="inf">{cake === "Red Velvet Cake" ? <h3>Red Velvet Cake</h3> : null}</h3>
         {cake === "Red Velvet Cake" ? <h2>${cakeprice}</h2> : null}
+        <h1>{g}</h1>
         <h3 className="inf">{caramel === "Salted Caramel Brownie" ? <h3>Salted Caramel Brownie</h3> : null}</h3>
         {caramel === "Salted Caramel Brownie" ? <h2>${caramelprice}</h2> : null}
+        <h1>{h}</h1>
         <h3 className="inf">{panna === "Vanilla Panna Cotta" ? <h3>Vanilla Panna Cotta</h3> : null}</h3>
         {panna === "Vanilla Panna Cotta" ? <h2>${pannaprice}</h2> : null}
+        <h1>{i}</h1>
         <div className="orderBox">      
           {count >= 1 ? <p className="order">Order Total</p> : null}
           {count >= 1 ? <p className="count">${price}</p> : null}
