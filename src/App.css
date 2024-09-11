@@ -82,3 +82,13 @@
   font-size: 25px;
   margin-top: 17px;
 }
+
+.priceBox{
+  display: flex;
+  font-size: 15px;
+}
+
+.priceTag{
+  margin-left: 40px;
+  
+}
