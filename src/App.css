@@ -37,6 +37,7 @@
 
 .inf{
   font-family: 'Red Hat Display', sans-serif;
+  
 }
 
 .cnfrm{
@@ -80,10 +81,6 @@
   display: flex;
 }
 
-.orderBox2{
-
-
-}
 
 .count{
   font-family: 'Red Hat Display', sans-serif;
@@ -106,5 +103,6 @@
 
 
 .subBox{
-  background-color: red;
+  background-color: white;
+  width: 500px;
 }
