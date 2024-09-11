@@ -89,15 +89,15 @@ function App() {
                 {e.category === "Panna Cotta" ? setpannaprice(e.price) : null}
 
 
-                {e.category === "Waffle" ? setA(vaffleprice + e.price) : null}
-                {e.category === "Crème Brûlée" ? setB(vanillaprice + e.price) : null}
-                {e.category === "Macaron" ? setC(macaronprice + e.price) : null}
-                {e.category === "Tiramisu" ? setD(tiramisuprice + e.price) : null}
-                {e.category === "Baklava" ? setE(price + e.price) : null}
-                {e.category === "Pie" ? setF(price + e.price) : null}
-                {e.category === "Cake" ? setG(price + e.price) : null}
-                {e.category === "Brownie" ? setH(price + e.price) : null}
-                {e.category === "Panna Cotta" ? setI(price + e.price) : null}
+                if (e.category === "Waffle") setA((prevA) => Number(e.price) + 3);
+                if (e.category === "Crème Brûlée") setB((prevB) => Number(e.price) + 3);
+                if (e.category === "Macaron") setC((prevC) => Number(e.price) + 3);
+                if (e.category === "Tiramisu") setD((prevD) => Number(e.price) + 3);
+                {e.category === "Baklava" ? setE(e.price) : null}
+                {e.category === "Pie" ? setF(e.price) : null}
+                {e.category === "Cake" ? setG(e.price) : null}
+                {e.category === "Brownie" ? setH(e.price) : null}
+                {e.category === "Panna Cotta" ? setI(e.price) : null}
                 
               }}
             />
