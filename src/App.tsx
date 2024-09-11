@@ -29,6 +29,17 @@ function App() {
   const [cakeprice, setCakePrice] = useState(0)
   const [caramelprice, setcaramelprice] = useState(0) 
   const [pannaprice, setpannaprice] = useState(0)  
+
+
+  const [a, setA] = useState("")
+  const [b, setB] = useState("")
+  const [c, setC] = useState("")
+  const [d, setD] = useState("")
+  const [e, setE] = useState("")
+  const [f, setF] = useState("")
+  const [g, setG] = useState("")
+  const [h, setH] = useState("")
+  const [i, setI] = useState("")
   
 
   return (
@@ -76,6 +87,17 @@ function App() {
                 {e.category === "Cake" ? setCakePrice(e.price) : null}
                 {e.category === "Brownie" ? setcaramelprice(e.price) : null}
                 {e.category === "Panna Cotta" ? setpannaprice(e.price) : null}
+
+
+                {e.category === "Waffle" ? setA(price + e.price) : null}
+                {e.category === "Crème Brûlée" ? setB(price + e.price) : null}
+                {e.category === "Macaron" ? setC(price + e.price) : null}
+                {e.category === "Waffle" ? setD(price + e.price) : null}
+                {e.category === "Crème Brûlée" ? setB(price + e.price) : null}
+                {e.category === "Macaron" ? setC(price + e.price) : null}
+                {e.category === "Waffle" ? setA(price + e.price) : null}
+                {e.category === "Crème Brûlée" ? setB(price + e.price) : null}
+                {e.category === "Macaron" ? setC(price + e.price) : null}
                 
               }}
             />
@@ -91,10 +113,13 @@ function App() {
         <h1 className="txt2">Your Cart ({count})</h1>
         <h3 className="inf">{vaffle === "Waffle with Berries" ? <h3>Waffle with Berries</h3> : null}</h3>
         {vaffle === "Waffle with Berries" ? <h2>${vaffleprice}</h2> : null}
+        <h1>{a}</h1>
         <h3 className="inf">{vanilla === "Vanilla Bean Crème Brûlée" ? <h3>Vanilla Bean Crème Brûlée</h3> : null}</h3>
         {vanilla === "Vanilla Bean Crème Brûlée" ? <h2>${vanillaprice}</h2> : null}
+        <h1>{b}</h1>
         <h3 className="inf">{macaron === "Macaron Mix of Five" ? <h3>Macaron Mix of Five</h3> : null}</h3>
         {macaron === "Macaron Mix of Five" ? <h2>${macaronprice}</h2> : null}
+        <h1>{a}</h1>
         <h3 className="inf">{tiramisu === "Classic Tiramisu" ? <h3>Classic Tiramisu</h3> : null}</h3>
         {tiramisu === "Classic Tiramisu" ? <h2>${tiramisuprice}</h2> : null}
         <h3 className="inf">{pistachio === "Pistachio Baklava" ? <h3>Pistachio Baklava</h3> : null}</h3>
