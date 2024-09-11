@@ -31,11 +31,11 @@ function App() {
   const [pannaprice, setpannaprice] = useState(0)  
 
 
-  const [a, setA] = useState("")
-  const [b, setB] = useState("")
-  const [c, setC] = useState("")
-  const [d, setD] = useState("")
-  const [e, setE] = useState("")
+  const [a, setA] = useState(0)
+  const [b, setB] = useState(0)
+  const [c, setC] = useState(0)
+  const [d, setD] = useState(0)
+  const [e, setE] = useState(0)
   const [f, setF] = useState("")
   const [g, setG] = useState("")
   const [h, setH] = useState("")
@@ -89,15 +89,15 @@ function App() {
                 {e.category === "Panna Cotta" ? setpannaprice(e.price) : null}
 
 
-                if (e.category === "Waffle") setA((prevA) => Number(e.price) + 3);
-                if (e.category === "Crème Brûlée") setB((prevB) => Number(e.price) + 3);
-                if (e.category === "Macaron") setC((prevC) => Number(e.price) + 3);
-                if (e.category === "Tiramisu") setD((prevD) => Number(e.price) + 3);
-                {e.category === "Baklava" ? setE(e.price) : null}
-                {e.category === "Pie" ? setF(e.price) : null}
-                {e.category === "Cake" ? setG(e.price) : null}
-                {e.category === "Brownie" ? setH(e.price) : null}
-                {e.category === "Panna Cotta" ? setI(e.price) : null}
+                {e.category === "Waffle" ? setA(a + vaffleprice) : null}
+                {e.category === "Crème Brûlée" ? setB(b + vanillaprice) : null}
+                {e.category === "Macaron" ? setC(c + macaronprice) : null}
+                {e.category === "Tiramisu" ? setD(d + tiramisuprice) : null}
+                {e.category === "Baklava" ? setE(e + pistachioprice) : null}
+                {e.category === "Pie" ? setF(f + lemonprice) : null}
+                {e.category === "Cake" ? setG(g + cakeprice) : null}
+                {e.category === "Brownie" ? setH(h + caramelprice) : null}
+                {e.category === "Panna Cotta" ? setI(i + pannaprice) : null}
                 
               }}
             />
