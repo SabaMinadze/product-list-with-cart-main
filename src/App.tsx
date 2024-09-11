@@ -40,6 +40,12 @@ function App() {
   const [g, setG] = useState(cakeprice)
   const [h, setH] = useState(caramelprice)
   const [i, setI] = useState(pannaprice)
+
+
+  function delete() {
+    console.log("Deleted");
+    
+  }
   
 
   return (
@@ -111,7 +117,7 @@ function App() {
           setCount(count - 1)
         }}>Decrease</button>
         <h1 className="txt2">Your Cart ({count})</h1>
-        <div className="subBox">
+        <div className="subBox" onClick={delete}>
           <h3 className="inf">{vaffle === "Waffle with Berries" ? <h3>Waffle with Berries</h3> : null}</h3>
             <div className="priceBox">
               {vaffle === "Waffle with Berries" ? <h2>${vaffleprice}</h2> : null}
