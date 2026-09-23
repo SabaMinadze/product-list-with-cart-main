@@ -2,8 +2,8 @@ import "./App.css";
 import Card from "./components/Card/Card";
 import data from "../data.json";
 import { useState } from "react";
-import empty from "../src/images/illustration-empty-cart.svg";
-import carbon from "../src/images/icon-carbon-neutral.svg";
+import empty from "./images/illustration-empty-cart.svg";
+import carbon from "./images/icon-carbon-neutral.svg";
 
 
 function App() {
